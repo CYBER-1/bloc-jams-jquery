@@ -19,8 +19,7 @@
         if (player.playState !== 'playing') { return; }
          
         const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
-         
-    // not sure where nextSongIndex comes from, not sure if previousSongIndex is correct //     
+              
         const previousSongIndex = currentSongIndex - 1;
         if (previousSongIndex >= album.songs.length) { return; }
          
